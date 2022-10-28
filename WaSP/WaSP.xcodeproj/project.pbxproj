@@ -3,66 +3,185 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2588BF7628E5045700BC6A5D /* WaSPApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588BF7528E5045700BC6A5D /* WaSPApp.swift */; };
-		2588BF7828E5045700BC6A5D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588BF7728E5045700BC6A5D /* ContentView.swift */; };
-		2588BF7A28E5045700BC6A5D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2588BF7928E5045700BC6A5D /* Assets.xcassets */; };
-		2588BF7E28E5045700BC6A5D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2588BF7D28E5045700BC6A5D /* Preview Assets.xcassets */; };
-		2588BF8828E5045700BC6A5D /* WaSPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588BF8728E5045700BC6A5D /* WaSPTests.swift */; };
-		2588BF9228E5045700BC6A5D /* WaSPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588BF9128E5045700BC6A5D /* WaSPUITests.swift */; };
-		2588BF9428E5045700BC6A5D /* WaSPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2588BF9328E5045700BC6A5D /* WaSPUITestsLaunchTests.swift */; };
+		250B94152901EF52007A7D81 /* ProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B94142901EF51007A7D81 /* ProgramViewModel.swift */; };
+		25CDADD028F94D0C00AA88C1 /* WaspCat499CsumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDADCF28F94D0C00AA88C1 /* WaspCat499CsumbApp.swift */; };
+		25CDADD228F94D0C00AA88C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDADD128F94D0C00AA88C1 /* ContentView.swift */; };
+		25CDADD428F94D0E00AA88C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CDADD328F94D0E00AA88C1 /* Assets.xcassets */; };
+		25CDADD728F94D0E00AA88C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CDADD628F94D0E00AA88C1 /* Preview Assets.xcassets */; };
+		25CDADE128F94D0E00AA88C1 /* WaspCat499CsumbTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDADE028F94D0E00AA88C1 /* WaspCat499CsumbTests.swift */; };
+		25CDADEB28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDADEA28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift */; };
+		25CDADED28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDADEC28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift */; };
+		25CDADF128F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 25CDADF028F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25CDADF628F94D0F00AA88C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CDADF528F94D0F00AA88C1 /* Assets.xcassets */; };
+		25CDADFC28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 25CDADFB28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25CDAE0128F94D0F00AA88C1 /* WaspCat499CsumbApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE0028F94D0F00AA88C1 /* WaspCat499CsumbApp.swift */; };
+		25CDAE0328F94D0F00AA88C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE0228F94D0F00AA88C1 /* ContentView.swift */; };
+		25CDAE0528F94D0F00AA88C1 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE0428F94D0F00AA88C1 /* NotificationController.swift */; };
+		25CDAE0728F94D0F00AA88C1 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE0628F94D0F00AA88C1 /* NotificationView.swift */; };
+		25CDAE0928F94D0F00AA88C1 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE0828F94D0F00AA88C1 /* ComplicationController.swift */; };
+		25CDAE0B28F94D1000AA88C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CDAE0A28F94D1000AA88C1 /* Assets.xcassets */; };
+		25CDAE0E28F94D1000AA88C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25CDAE0D28F94D1000AA88C1 /* Preview Assets.xcassets */; };
+		25CDAE1A28F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE1928F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppTests.swift */; };
+		25CDAE2428F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE2328F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITests.swift */; };
+		25CDAE2628F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE2528F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift */; };
+		25CDAE4528F94E3200AA88C1 /* ProgramView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE4428F94E3200AA88C1 /* ProgramView.swift */; };
+		25CDAE4728F94E6F00AA88C1 /* ProgramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE4628F94E6F00AA88C1 /* ProgramObject.swift */; };
+		25CDAE4928F9562200AA88C1 /* ConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE4828F9562200AA88C1 /* ConnectionProvider.swift */; };
+		25CDAE4C28F9566500AA88C1 /* WatchConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25CDAE4B28F9566500AA88C1 /* WatchConnectivity.framework */; };
+		25F9685529024C0A000A8CC2 /* ProgramObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE4628F94E6F00AA88C1 /* ProgramObject.swift */; };
+		25F9685629024C10000A8CC2 /* ConnectionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25CDAE4828F9562200AA88C1 /* ConnectionProvider.swift */; };
+		25F9685729024C14000A8CC2 /* ProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B94142901EF51007A7D81 /* ProgramViewModel.swift */; };
+		25F9685929024CA7000A8CC2 /* ProgContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25F9685829024CA7000A8CC2 /* ProgContentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2588BF8428E5045700BC6A5D /* PBXContainerItemProxy */ = {
+		25CDADDD28F94D0E00AA88C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2588BF6A28E5045600BC6A5D /* Project object */;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2588BF7128E5045700BC6A5D;
-			remoteInfo = WaSP;
+			remoteGlobalIDString = 25CDADCB28F94D0C00AA88C1;
+			remoteInfo = WaspCat499Csumb;
 		};
-		2588BF8E28E5045700BC6A5D /* PBXContainerItemProxy */ = {
+		25CDADE728F94D0E00AA88C1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 2588BF6A28E5045600BC6A5D /* Project object */;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 2588BF7128E5045700BC6A5D;
-			remoteInfo = WaSP;
+			remoteGlobalIDString = 25CDADCB28F94D0C00AA88C1;
+			remoteInfo = WaspCat499Csumb;
+		};
+		25CDADF228F94D0E00AA88C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CDADEF28F94D0E00AA88C1;
+			remoteInfo = "WaspCat499Csumb WatchKit App";
+		};
+		25CDADFD28F94D0F00AA88C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CDADFA28F94D0F00AA88C1;
+			remoteInfo = "WaspCat499Csumb WatchKit Extension";
+		};
+		25CDAE1628F94D1000AA88C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CDADFA28F94D0F00AA88C1;
+			remoteInfo = "WaspCat499Csumb WatchKit Extension";
+		};
+		25CDAE2028F94D1000AA88C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25CDADC428F94D0C00AA88C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25CDADEF28F94D0E00AA88C1;
+			remoteInfo = "WaspCat499Csumb WatchKit App";
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		25CDAE2C28F94D1000AA88C1 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25CDADFC28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE3028F94D1000AA88C1 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				25CDADF128F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		2588BF7228E5045700BC6A5D /* WaSP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaSP.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2588BF7528E5045700BC6A5D /* WaSPApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaSPApp.swift; sourceTree = "<group>"; };
-		2588BF7728E5045700BC6A5D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		2588BF7928E5045700BC6A5D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2588BF7B28E5045700BC6A5D /* WaSP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WaSP.entitlements; sourceTree = "<group>"; };
-		2588BF7D28E5045700BC6A5D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2588BF8328E5045700BC6A5D /* WaSPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaSPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2588BF8728E5045700BC6A5D /* WaSPTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaSPTests.swift; sourceTree = "<group>"; };
-		2588BF8D28E5045700BC6A5D /* WaSPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaSPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2588BF9128E5045700BC6A5D /* WaSPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaSPUITests.swift; sourceTree = "<group>"; };
-		2588BF9328E5045700BC6A5D /* WaSPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaSPUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		250B94142901EF51007A7D81 /* ProgramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewModel.swift; sourceTree = "<group>"; };
+		25CDADCC28F94D0C00AA88C1 /* WaspCat499Csumb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaspCat499Csumb.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDADCF28F94D0C00AA88C1 /* WaspCat499CsumbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499CsumbApp.swift; sourceTree = "<group>"; };
+		25CDADD128F94D0C00AA88C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25CDADD328F94D0E00AA88C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25CDADD628F94D0E00AA88C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25CDADDC28F94D0E00AA88C1 /* WaspCat499CsumbTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaspCat499CsumbTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDADE028F94D0E00AA88C1 /* WaspCat499CsumbTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499CsumbTests.swift; sourceTree = "<group>"; };
+		25CDADE628F94D0E00AA88C1 /* WaspCat499CsumbUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaspCat499CsumbUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDADEA28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499CsumbUITests.swift; sourceTree = "<group>"; };
+		25CDADEC28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499CsumbUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25CDADF028F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WaspCat499Csumb WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDADF528F94D0F00AA88C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25CDADFB28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WaspCat499Csumb WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDAE0028F94D0F00AA88C1 /* WaspCat499CsumbApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499CsumbApp.swift; sourceTree = "<group>"; };
+		25CDAE0228F94D0F00AA88C1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		25CDAE0428F94D0F00AA88C1 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		25CDAE0628F94D0F00AA88C1 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		25CDAE0828F94D0F00AA88C1 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		25CDAE0A28F94D1000AA88C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25CDAE0D28F94D1000AA88C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		25CDAE0F28F94D1000AA88C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25CDAE1028F94D1000AA88C1 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		25CDAE1528F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaspCat499Csumb WatchKit AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDAE1928F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499Csumb_WatchKit_AppTests.swift; sourceTree = "<group>"; };
+		25CDAE1F28F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WaspCat499Csumb WatchKit AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		25CDAE2328F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499Csumb_WatchKit_AppUITests.swift; sourceTree = "<group>"; };
+		25CDAE2528F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		25CDAE4428F94E3200AA88C1 /* ProgramView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramView.swift; sourceTree = "<group>"; };
+		25CDAE4628F94E6F00AA88C1 /* ProgramObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramObject.swift; sourceTree = "<group>"; };
+		25CDAE4828F9562200AA88C1 /* ConnectionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionProvider.swift; sourceTree = "<group>"; };
+		25CDAE4B28F9566500AA88C1 /* WatchConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WatchConnectivity.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk/System/Library/Frameworks/WatchConnectivity.framework; sourceTree = DEVELOPER_DIR; };
+		25F9685829024CA7000A8CC2 /* ProgContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgContentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2588BF6F28E5045700BC6A5D /* Frameworks */ = {
+		25CDADC928F94D0C00AA88C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CDAE4C28F9566500AA88C1 /* WatchConnectivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDADD928F94D0E00AA88C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF8028E5045700BC6A5D /* Frameworks */ = {
+		25CDADE328F94D0E00AA88C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF8A28E5045700BC6A5D /* Frameworks */ = {
+		25CDADF828F94D0F00AA88C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1228F94D1000AA88C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1C28F94D1000AA88C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,180 +191,387 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2588BF6928E5045600BC6A5D = {
+		25CDADC328F94D0C00AA88C1 = {
 			isa = PBXGroup;
 			children = (
-				2588BF7428E5045700BC6A5D /* WaSP */,
-				2588BF8628E5045700BC6A5D /* WaSPTests */,
-				2588BF9028E5045700BC6A5D /* WaSPUITests */,
-				2588BF7328E5045700BC6A5D /* Products */,
+				25CDADCE28F94D0C00AA88C1 /* WaspCat499Csumb */,
+				25CDADDF28F94D0E00AA88C1 /* WaspCat499CsumbTests */,
+				25CDADE928F94D0E00AA88C1 /* WaspCat499CsumbUITests */,
+				25CDADF428F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */,
+				25CDADFF28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */,
+				25CDAE1828F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests */,
+				25CDAE2228F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests */,
+				25CDADCD28F94D0C00AA88C1 /* Products */,
+				25CDAE4A28F9566500AA88C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2588BF7328E5045700BC6A5D /* Products */ = {
+		25CDADCD28F94D0C00AA88C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2588BF7228E5045700BC6A5D /* WaSP.app */,
-				2588BF8328E5045700BC6A5D /* WaSPTests.xctest */,
-				2588BF8D28E5045700BC6A5D /* WaSPUITests.xctest */,
+				25CDADCC28F94D0C00AA88C1 /* WaspCat499Csumb.app */,
+				25CDADDC28F94D0E00AA88C1 /* WaspCat499CsumbTests.xctest */,
+				25CDADE628F94D0E00AA88C1 /* WaspCat499CsumbUITests.xctest */,
+				25CDADF028F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app */,
+				25CDADFB28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex */,
+				25CDAE1528F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests.xctest */,
+				25CDAE1F28F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2588BF7428E5045700BC6A5D /* WaSP */ = {
+		25CDADCE28F94D0C00AA88C1 /* WaspCat499Csumb */ = {
 			isa = PBXGroup;
 			children = (
-				2588BF7528E5045700BC6A5D /* WaSPApp.swift */,
-				2588BF7728E5045700BC6A5D /* ContentView.swift */,
-				2588BF7928E5045700BC6A5D /* Assets.xcassets */,
-				2588BF7B28E5045700BC6A5D /* WaSP.entitlements */,
-				2588BF7C28E5045700BC6A5D /* Preview Content */,
+				25CDAE4328F94DE800AA88C1 /* Classes */,
+				25CDAE4228F94DDE00AA88C1 /* Views */,
+				25CDADCF28F94D0C00AA88C1 /* WaspCat499CsumbApp.swift */,
+				25CDADD328F94D0E00AA88C1 /* Assets.xcassets */,
+				25CDADD528F94D0E00AA88C1 /* Preview Content */,
 			);
-			path = WaSP;
+			path = WaspCat499Csumb;
 			sourceTree = "<group>";
 		};
-		2588BF7C28E5045700BC6A5D /* Preview Content */ = {
+		25CDADD528F94D0E00AA88C1 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				2588BF7D28E5045700BC6A5D /* Preview Assets.xcassets */,
+				25CDADD628F94D0E00AA88C1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		2588BF8628E5045700BC6A5D /* WaSPTests */ = {
+		25CDADDF28F94D0E00AA88C1 /* WaspCat499CsumbTests */ = {
 			isa = PBXGroup;
 			children = (
-				2588BF8728E5045700BC6A5D /* WaSPTests.swift */,
+				25CDADE028F94D0E00AA88C1 /* WaspCat499CsumbTests.swift */,
 			);
-			path = WaSPTests;
+			path = WaspCat499CsumbTests;
 			sourceTree = "<group>";
 		};
-		2588BF9028E5045700BC6A5D /* WaSPUITests */ = {
+		25CDADE928F94D0E00AA88C1 /* WaspCat499CsumbUITests */ = {
 			isa = PBXGroup;
 			children = (
-				2588BF9128E5045700BC6A5D /* WaSPUITests.swift */,
-				2588BF9328E5045700BC6A5D /* WaSPUITestsLaunchTests.swift */,
+				25CDADEA28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift */,
+				25CDADEC28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift */,
 			);
-			path = WaSPUITests;
+			path = WaspCat499CsumbUITests;
+			sourceTree = "<group>";
+		};
+		25CDADF428F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				25CDADF528F94D0F00AA88C1 /* Assets.xcassets */,
+			);
+			path = "WaspCat499Csumb WatchKit App";
+			sourceTree = "<group>";
+		};
+		25CDADFF28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE0028F94D0F00AA88C1 /* WaspCat499CsumbApp.swift */,
+				25CDAE0228F94D0F00AA88C1 /* ContentView.swift */,
+				25CDAE0428F94D0F00AA88C1 /* NotificationController.swift */,
+				25CDAE0628F94D0F00AA88C1 /* NotificationView.swift */,
+				25F9685829024CA7000A8CC2 /* ProgContentView.swift */,
+				25CDAE0828F94D0F00AA88C1 /* ComplicationController.swift */,
+				25CDAE0A28F94D1000AA88C1 /* Assets.xcassets */,
+				25CDAE0F28F94D1000AA88C1 /* Info.plist */,
+				25CDAE1028F94D1000AA88C1 /* PushNotificationPayload.apns */,
+				25CDAE0C28F94D1000AA88C1 /* Preview Content */,
+			);
+			path = "WaspCat499Csumb WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		25CDAE0C28F94D1000AA88C1 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE0D28F94D1000AA88C1 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		25CDAE1828F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE1928F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppTests.swift */,
+			);
+			path = "WaspCat499Csumb WatchKit AppTests";
+			sourceTree = "<group>";
+		};
+		25CDAE2228F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE2328F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITests.swift */,
+				25CDAE2528F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift */,
+			);
+			path = "WaspCat499Csumb WatchKit AppUITests";
+			sourceTree = "<group>";
+		};
+		25CDAE4228F94DDE00AA88C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25CDADD128F94D0C00AA88C1 /* ContentView.swift */,
+				25CDAE4428F94E3200AA88C1 /* ProgramView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25CDAE4328F94DE800AA88C1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE4628F94E6F00AA88C1 /* ProgramObject.swift */,
+				25CDAE4828F9562200AA88C1 /* ConnectionProvider.swift */,
+				250B94142901EF51007A7D81 /* ProgramViewModel.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		25CDAE4A28F9566500AA88C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				25CDAE4B28F9566500AA88C1 /* WatchConnectivity.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2588BF7128E5045700BC6A5D /* WaSP */ = {
+		25CDADCB28F94D0C00AA88C1 /* WaspCat499Csumb */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2588BF9728E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSP" */;
+			buildConfigurationList = 25CDAE3128F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb" */;
 			buildPhases = (
-				2588BF6E28E5045700BC6A5D /* Sources */,
-				2588BF6F28E5045700BC6A5D /* Frameworks */,
-				2588BF7028E5045700BC6A5D /* Resources */,
+				25CDADC828F94D0C00AA88C1 /* Sources */,
+				25CDADC928F94D0C00AA88C1 /* Frameworks */,
+				25CDADCA28F94D0C00AA88C1 /* Resources */,
+				25CDAE3028F94D1000AA88C1 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				25CDADF328F94D0E00AA88C1 /* PBXTargetDependency */,
 			);
-			name = WaSP;
-			productName = WaSP;
-			productReference = 2588BF7228E5045700BC6A5D /* WaSP.app */;
+			name = WaspCat499Csumb;
+			productName = WaspCat499Csumb;
+			productReference = 25CDADCC28F94D0C00AA88C1 /* WaspCat499Csumb.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2588BF8228E5045700BC6A5D /* WaSPTests */ = {
+		25CDADDB28F94D0E00AA88C1 /* WaspCat499CsumbTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2588BF9A28E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSPTests" */;
+			buildConfigurationList = 25CDAE3428F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499CsumbTests" */;
 			buildPhases = (
-				2588BF7F28E5045700BC6A5D /* Sources */,
-				2588BF8028E5045700BC6A5D /* Frameworks */,
-				2588BF8128E5045700BC6A5D /* Resources */,
+				25CDADD828F94D0E00AA88C1 /* Sources */,
+				25CDADD928F94D0E00AA88C1 /* Frameworks */,
+				25CDADDA28F94D0E00AA88C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2588BF8528E5045700BC6A5D /* PBXTargetDependency */,
+				25CDADDE28F94D0E00AA88C1 /* PBXTargetDependency */,
 			);
-			name = WaSPTests;
-			productName = WaSPTests;
-			productReference = 2588BF8328E5045700BC6A5D /* WaSPTests.xctest */;
+			name = WaspCat499CsumbTests;
+			productName = WaspCat499CsumbTests;
+			productReference = 25CDADDC28F94D0E00AA88C1 /* WaspCat499CsumbTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2588BF8C28E5045700BC6A5D /* WaSPUITests */ = {
+		25CDADE528F94D0E00AA88C1 /* WaspCat499CsumbUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2588BF9D28E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSPUITests" */;
+			buildConfigurationList = 25CDAE3728F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499CsumbUITests" */;
 			buildPhases = (
-				2588BF8928E5045700BC6A5D /* Sources */,
-				2588BF8A28E5045700BC6A5D /* Frameworks */,
-				2588BF8B28E5045700BC6A5D /* Resources */,
+				25CDADE228F94D0E00AA88C1 /* Sources */,
+				25CDADE328F94D0E00AA88C1 /* Frameworks */,
+				25CDADE428F94D0E00AA88C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2588BF8F28E5045700BC6A5D /* PBXTargetDependency */,
+				25CDADE828F94D0E00AA88C1 /* PBXTargetDependency */,
 			);
-			name = WaSPUITests;
-			productName = WaSPUITests;
-			productReference = 2588BF8D28E5045700BC6A5D /* WaSPUITests.xctest */;
+			name = WaspCat499CsumbUITests;
+			productName = WaspCat499CsumbUITests;
+			productReference = 25CDADE628F94D0E00AA88C1 /* WaspCat499CsumbUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		25CDADEF28F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CDAE2D28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit App" */;
+			buildPhases = (
+				25CDADEE28F94D0E00AA88C1 /* Resources */,
+				25CDAE2C28F94D1000AA88C1 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CDADFE28F94D0F00AA88C1 /* PBXTargetDependency */,
+			);
+			name = "WaspCat499Csumb WatchKit App";
+			productName = "WaspCat499Csumb WatchKit App";
+			productReference = 25CDADF028F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		25CDADFA28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CDAE2928F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit Extension" */;
+			buildPhases = (
+				25CDADF728F94D0F00AA88C1 /* Sources */,
+				25CDADF828F94D0F00AA88C1 /* Frameworks */,
+				25CDADF928F94D0F00AA88C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WaspCat499Csumb WatchKit Extension";
+			productName = "WaspCat499Csumb WatchKit Extension";
+			productReference = 25CDADFB28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		25CDAE1428F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CDAE3A28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit AppTests" */;
+			buildPhases = (
+				25CDAE1128F94D1000AA88C1 /* Sources */,
+				25CDAE1228F94D1000AA88C1 /* Frameworks */,
+				25CDAE1328F94D1000AA88C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CDAE1728F94D1000AA88C1 /* PBXTargetDependency */,
+			);
+			name = "WaspCat499Csumb WatchKit AppTests";
+			productName = "WaspCat499Csumb WatchKit AppTests";
+			productReference = 25CDAE1528F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25CDAE1E28F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25CDAE3D28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit AppUITests" */;
+			buildPhases = (
+				25CDAE1B28F94D1000AA88C1 /* Sources */,
+				25CDAE1C28F94D1000AA88C1 /* Frameworks */,
+				25CDAE1D28F94D1000AA88C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25CDAE2128F94D1000AA88C1 /* PBXTargetDependency */,
+			);
+			name = "WaspCat499Csumb WatchKit AppUITests";
+			productName = "WaspCat499Csumb WatchKit AppUITests";
+			productReference = 25CDAE1F28F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2588BF6A28E5045600BC6A5D /* Project object */ = {
+		25CDADC428F94D0C00AA88C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1400;
-				LastUpgradeCheck = 1400;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					2588BF7128E5045700BC6A5D = {
-						CreatedOnToolsVersion = 14.0;
+					25CDADCB28F94D0C00AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
-					2588BF8228E5045700BC6A5D = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 2588BF7128E5045700BC6A5D;
+					25CDADDB28F94D0E00AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25CDADCB28F94D0C00AA88C1;
 					};
-					2588BF8C28E5045700BC6A5D = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 2588BF7128E5045700BC6A5D;
+					25CDADE528F94D0E00AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25CDADCB28F94D0C00AA88C1;
+					};
+					25CDADEF28F94D0E00AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					25CDADFA28F94D0F00AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					25CDAE1428F94D1000AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25CDADFA28F94D0F00AA88C1;
+					};
+					25CDAE1E28F94D1000AA88C1 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 25CDADEF28F94D0E00AA88C1;
 					};
 				};
 			};
-			buildConfigurationList = 2588BF6D28E5045600BC6A5D /* Build configuration list for PBXProject "WaSP" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 25CDADC728F94D0C00AA88C1 /* Build configuration list for PBXProject "WaspCat499Csumb" */;
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 2588BF6928E5045600BC6A5D;
-			productRefGroup = 2588BF7328E5045700BC6A5D /* Products */;
+			mainGroup = 25CDADC328F94D0C00AA88C1;
+			productRefGroup = 25CDADCD28F94D0C00AA88C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2588BF7128E5045700BC6A5D /* WaSP */,
-				2588BF8228E5045700BC6A5D /* WaSPTests */,
-				2588BF8C28E5045700BC6A5D /* WaSPUITests */,
+				25CDADCB28F94D0C00AA88C1 /* WaspCat499Csumb */,
+				25CDADDB28F94D0E00AA88C1 /* WaspCat499CsumbTests */,
+				25CDADE528F94D0E00AA88C1 /* WaspCat499CsumbUITests */,
+				25CDADEF28F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */,
+				25CDADFA28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */,
+				25CDAE1428F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppTests */,
+				25CDAE1E28F94D1000AA88C1 /* WaspCat499Csumb WatchKit AppUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2588BF7028E5045700BC6A5D /* Resources */ = {
+		25CDADCA28F94D0C00AA88C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2588BF7E28E5045700BC6A5D /* Preview Assets.xcassets in Resources */,
-				2588BF7A28E5045700BC6A5D /* Assets.xcassets in Resources */,
+				25CDADD728F94D0E00AA88C1 /* Preview Assets.xcassets in Resources */,
+				25CDADD428F94D0E00AA88C1 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF8128E5045700BC6A5D /* Resources */ = {
+		25CDADDA28F94D0E00AA88C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF8B28E5045700BC6A5D /* Resources */ = {
+		25CDADE428F94D0E00AA88C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDADEE28F94D0E00AA88C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CDADF628F94D0F00AA88C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDADF928F94D0F00AA88C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CDAE0E28F94D1000AA88C1 /* Preview Assets.xcassets in Resources */,
+				25CDAE0B28F94D1000AA88C1 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1328F94D1000AA88C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1D28F94D1000AA88C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,55 +581,113 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2588BF6E28E5045700BC6A5D /* Sources */ = {
+		25CDADC828F94D0C00AA88C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2588BF7828E5045700BC6A5D /* ContentView.swift in Sources */,
-				2588BF7628E5045700BC6A5D /* WaSPApp.swift in Sources */,
+				25CDAE4928F9562200AA88C1 /* ConnectionProvider.swift in Sources */,
+				25CDADD228F94D0C00AA88C1 /* ContentView.swift in Sources */,
+				25CDAE4728F94E6F00AA88C1 /* ProgramObject.swift in Sources */,
+				25CDADD028F94D0C00AA88C1 /* WaspCat499CsumbApp.swift in Sources */,
+				25CDAE4528F94E3200AA88C1 /* ProgramView.swift in Sources */,
+				250B94152901EF52007A7D81 /* ProgramViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF7F28E5045700BC6A5D /* Sources */ = {
+		25CDADD828F94D0E00AA88C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2588BF8828E5045700BC6A5D /* WaSPTests.swift in Sources */,
+				25CDADE128F94D0E00AA88C1 /* WaspCat499CsumbTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2588BF8928E5045700BC6A5D /* Sources */ = {
+		25CDADE228F94D0E00AA88C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2588BF9228E5045700BC6A5D /* WaSPUITests.swift in Sources */,
-				2588BF9428E5045700BC6A5D /* WaSPUITestsLaunchTests.swift in Sources */,
+				25CDADED28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift in Sources */,
+				25CDADEB28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDADF728F94D0F00AA88C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25F9685729024C14000A8CC2 /* ProgramViewModel.swift in Sources */,
+				25F9685629024C10000A8CC2 /* ConnectionProvider.swift in Sources */,
+				25F9685929024CA7000A8CC2 /* ProgContentView.swift in Sources */,
+				25F9685529024C0A000A8CC2 /* ProgramObject.swift in Sources */,
+				25CDAE0528F94D0F00AA88C1 /* NotificationController.swift in Sources */,
+				25CDAE0328F94D0F00AA88C1 /* ContentView.swift in Sources */,
+				25CDAE0928F94D0F00AA88C1 /* ComplicationController.swift in Sources */,
+				25CDAE0128F94D0F00AA88C1 /* WaspCat499CsumbApp.swift in Sources */,
+				25CDAE0728F94D0F00AA88C1 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1128F94D1000AA88C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CDAE1A28F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25CDAE1B28F94D1000AA88C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25CDAE2428F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITests.swift in Sources */,
+				25CDAE2628F94D1000AA88C1 /* WaspCat499Csumb_WatchKit_AppUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2588BF8528E5045700BC6A5D /* PBXTargetDependency */ = {
+		25CDADDE28F94D0E00AA88C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2588BF7128E5045700BC6A5D /* WaSP */;
-			targetProxy = 2588BF8428E5045700BC6A5D /* PBXContainerItemProxy */;
+			target = 25CDADCB28F94D0C00AA88C1 /* WaspCat499Csumb */;
+			targetProxy = 25CDADDD28F94D0E00AA88C1 /* PBXContainerItemProxy */;
 		};
-		2588BF8F28E5045700BC6A5D /* PBXTargetDependency */ = {
+		25CDADE828F94D0E00AA88C1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2588BF7128E5045700BC6A5D /* WaSP */;
-			targetProxy = 2588BF8E28E5045700BC6A5D /* PBXContainerItemProxy */;
+			target = 25CDADCB28F94D0C00AA88C1 /* WaspCat499Csumb */;
+			targetProxy = 25CDADE728F94D0E00AA88C1 /* PBXContainerItemProxy */;
+		};
+		25CDADF328F94D0E00AA88C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CDADEF28F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */;
+			targetProxy = 25CDADF228F94D0E00AA88C1 /* PBXContainerItemProxy */;
+		};
+		25CDADFE28F94D0F00AA88C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CDADFA28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */;
+			targetProxy = 25CDADFD28F94D0F00AA88C1 /* PBXContainerItemProxy */;
+		};
+		25CDAE1728F94D1000AA88C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CDADFA28F94D0F00AA88C1 /* WaspCat499Csumb WatchKit Extension */;
+			targetProxy = 25CDAE1628F94D1000AA88C1 /* PBXContainerItemProxy */;
+		};
+		25CDAE2128F94D1000AA88C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25CDADEF28F94D0E00AA88C1 /* WaspCat499Csumb WatchKit App */;
+			targetProxy = 25CDAE2028F94D1000AA88C1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2588BF9528E5045700BC6A5D /* Debug */ = {
+		25CDAE2728F94D1000AA88C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -355,13 +739,14 @@
 			};
 			name = Debug;
 		};
-		2588BF9628E5045700BC6A5D /* Release */ = {
+		25CDAE2828F94D1000AA88C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -406,83 +791,188 @@
 			};
 			name = Release;
 		};
-		2588BF9828E5045700BC6A5D /* Debug */ = {
+		25CDAE2A28F94D1000AA88C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaspCat499Csumb WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaspCat499Csumb WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25CDAE2B28F94D1000AA88C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"WaspCat499Csumb WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "WaspCat499Csumb WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25CDAE2E28F94D1000AA88C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WaspCat499Csumb_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SCAR.WaspCat499Csumb;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25CDAE2F28F94D1000AA88C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = WaspCat499Csumb_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SCAR.WaspCat499Csumb;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25CDAE3228F94D1000AA88C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WaSP/WaSP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WaSP/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WaspCat499Csumb/Preview Content\"";
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSP;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2588BF9928E5045700BC6A5D /* Release */ = {
+		25CDAE3328F94D1000AA88C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = WaSP/WaSP.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"WaSP/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"WaspCat499Csumb/Preview Content\"";
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
-				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
-				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSP;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2588BF9B28E5045700BC6A5D /* Debug */ = {
+		25CDAE3528F94D1000AA88C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -491,21 +981,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSPTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499CsumbTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaSP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaSP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaspCat499Csumb.app/WaspCat499Csumb";
 			};
 			name = Debug;
 		};
-		2588BF9C28E5045700BC6A5D /* Release */ = {
+		25CDAE3628F94D1000AA88C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -514,21 +1002,20 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSPTests;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499CsumbTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaSP.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WaSP";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaspCat499Csumb.app/WaspCat499Csumb";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		2588BF9E28E5045700BC6A5D /* Debug */ = {
+		25CDAE3828F94D1000AA88C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -536,21 +1023,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSPUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499CsumbUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WaSP;
+				TEST_TARGET_NAME = WaspCat499Csumb;
 			};
 			name = Debug;
 		};
-		2588BF9F28E5045700BC6A5D /* Release */ = {
+		25CDAE3928F94D1000AA88C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -558,60 +1043,177 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
-				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = WaSP.WaSPUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499CsumbUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = WaSP;
+				TEST_TARGET_NAME = WaspCat499Csumb;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25CDAE3B28F94D1000AA88C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCAR.WaspCat499Csumb-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaspCat499Csumb WatchKit Extension.appex/WaspCat499Csumb WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25CDAE3C28F94D1000AA88C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCAR.WaspCat499Csumb-WatchKit-AppTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaspCat499Csumb WatchKit Extension.appex/WaspCat499Csumb WatchKit Extension";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		25CDAE3E28F94D1000AA88C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCAR.WaspCat499Csumb-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WaspCat499Csumb WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		25CDAE3F28F94D1000AA88C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KDBAZ3U52;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "SCAR.WaspCat499Csumb-WatchKit-AppUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "WaspCat499Csumb WatchKit App";
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2588BF6D28E5045600BC6A5D /* Build configuration list for PBXProject "WaSP" */ = {
+		25CDADC728F94D0C00AA88C1 /* Build configuration list for PBXProject "WaspCat499Csumb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2588BF9528E5045700BC6A5D /* Debug */,
-				2588BF9628E5045700BC6A5D /* Release */,
+				25CDAE2728F94D1000AA88C1 /* Debug */,
+				25CDAE2828F94D1000AA88C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2588BF9728E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSP" */ = {
+		25CDAE2928F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2588BF9828E5045700BC6A5D /* Debug */,
-				2588BF9928E5045700BC6A5D /* Release */,
+				25CDAE2A28F94D1000AA88C1 /* Debug */,
+				25CDAE2B28F94D1000AA88C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2588BF9A28E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSPTests" */ = {
+		25CDAE2D28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2588BF9B28E5045700BC6A5D /* Debug */,
-				2588BF9C28E5045700BC6A5D /* Release */,
+				25CDAE2E28F94D1000AA88C1 /* Debug */,
+				25CDAE2F28F94D1000AA88C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2588BF9D28E5045700BC6A5D /* Build configuration list for PBXNativeTarget "WaSPUITests" */ = {
+		25CDAE3128F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2588BF9E28E5045700BC6A5D /* Debug */,
-				2588BF9F28E5045700BC6A5D /* Release */,
+				25CDAE3228F94D1000AA88C1 /* Debug */,
+				25CDAE3328F94D1000AA88C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CDAE3428F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499CsumbTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CDAE3528F94D1000AA88C1 /* Debug */,
+				25CDAE3628F94D1000AA88C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CDAE3728F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499CsumbUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CDAE3828F94D1000AA88C1 /* Debug */,
+				25CDAE3928F94D1000AA88C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CDAE3A28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit AppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CDAE3B28F94D1000AA88C1 /* Debug */,
+				25CDAE3C28F94D1000AA88C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25CDAE3D28F94D1000AA88C1 /* Build configuration list for PBXNativeTarget "WaspCat499Csumb WatchKit AppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25CDAE3E28F94D1000AA88C1 /* Debug */,
+				25CDAE3F28F94D1000AA88C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2588BF6A28E5045600BC6A5D /* Project object */;
+	rootObject = 25CDADC428F94D0C00AA88C1 /* Project object */;
 }
