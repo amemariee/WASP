@@ -13,8 +13,8 @@ struct ContentView: View {
     @State var classname: [String] = []
     @State var dataArray: [String] = []
     @State var random: String = ""
-    class Class {
-        @State var ClassName: String = "null"
+    class Class: Identifiable {
+        @State var ClassName: String
         @State var students: [String] = []
         
         init(ClassName: String, students: [String])
@@ -36,61 +36,73 @@ struct ContentView: View {
                 List{
                         if(totalClass > 0)
                     {
-                            ForEach(classesList[currentClass].students, id:\.self)
+                            
+                            ForEach(classesList[currentClass].students, id: \.self)
                             {
-                                Text("\($0)")
+                                students in
+                                Text("\(students)")
                             }
                         }
                     
                     //.onDelete(perform: removeRows)
                 }
-                TextField("Class Name", text: $addClassNameText)
-                    .foregroundColor(.black)
-                    .font(.headline)
-                Button(action: {
-                    if TextIsName(){
-                        saveText()
-                        save()
-                    }
-                }, label:{
-                    Text("Add Student".uppercased())
-                        .padding()
-                        .background(Color.blue.cornerRadius(10))
-                        .foregroundColor(.white)
-                        .font(.headline)
-                })
                 
                 if(totalClass > 0)
                 {
+                    ForEach(classesList)
+                    {
+                        classes in
+                        Text("\(classes.ClassName)")
+                    }
                     //let data = ""
                     //for i in stride(from: 1, to: totalClass, by: 1)
                     //{
                     //    Text(classesList[i].ClassName)
                   // }
-                    Text("This is a test")
+                   
                                     }
-                Spacer()
-                
-                Button(action: {
-                    RandomName()
-                }, label:{
-                    Text("Chose Random")
-                        .padding()
-                        .background(Color.blue.cornerRadius(10))
-                        .foregroundColor(.white)
-                        .font(.headline)
-                    Text(random)
-                })
-                Button(action: {
-                    addClass()
-                }, label:{
-                    Text("Add Class")
-                        .padding()
-                        .background(Color.blue.cornerRadius(10))
-                        .foregroundColor(.white)
-                        .font(.headline)
+                TextField("Class Name", text: $addClassNameText)
+                    .foregroundColor(.black)
+                    .font(.headline)
+                HStack{
                     
-                })
+                    
+                    Button(action: {
+                        if TextIsName(){
+                            saveText()
+                            save()
+                        }
+                    }, label:{
+                        Text("Add Student".uppercased())
+                            .padding(5)
+                            .background(Color.blue.cornerRadius(10))
+                            .foregroundColor(.white)
+                            .font(.headline)
+                    })
+                    
+                    
+                    Spacer()
+                    
+                    Button(action: {
+                        RandomName()
+                    }, label:{
+                        Text("Chose Random")
+                            .padding(5)
+                            .background(Color.blue.cornerRadius(10))
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        Text(random)
+                    })
+                    Button(action: {
+                        addClass()
+                    }, label:{
+                        Text("Add Class")
+                            .padding(5)
+                            .background(Color.blue.cornerRadius(10))
+                            .foregroundColor(.white)
+                            .font(.headline)
+                        
+                    })                }
                 .padding()
                 ForEach(classname, id:\.self){ data in
                     Text(data)
@@ -105,7 +117,7 @@ struct ContentView: View {
                 load()
             })
             
-            .padding()
+            .padding(4)
             
             .navigationTitle("WASP")
             
@@ -121,7 +133,14 @@ struct ContentView: View {
     func saveText(){
         //dataArray.append(textFieldText)
         //textFieldText = ""
-        classesList[currentClass].students.append(textFieldText)
+        print("total class \(totalClass)")
+        print("Text \(textFieldText)")
+        if(totalClass > 0)
+        {
+            classesList[currentClass].students.append(textFieldText)
+        }
+        print(classesList[currentClass].students)
+       
         
     }
     func RandomName(){
@@ -151,13 +170,13 @@ struct ContentView: View {
             classesList.append( Class(ClassName: addClassNameText, students: []))
             totalClass += 1
             addClassNameText = ""
+            
         }
         if(totalClass == 0)
         {
             currentClass = 1
         }
-        
-    }
+            }
     
     
     
