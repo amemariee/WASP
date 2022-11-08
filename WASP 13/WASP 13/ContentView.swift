@@ -14,11 +14,18 @@ struct ContentView: View {
     @State var dataArray: [String] = []
     @State var random: String = ""
     class Class {
-        var ClassName: String = "null"
-        var students: [String] = []
+        @State var ClassName: String = "null"
+        @State var students: [String] = []
+        
+        init(ClassName: String, students: [String])
+        {
+            self.ClassName = ClassName
+            self.students = students
+        }
     }
-    var classesList: [Class] = []
-    var totalClass: Int = 0
+    @State var classesList: [Class] = []
+    @State var totalClass: Int = 0
+    @State var currentClass: Int = 0
     var body: some View {
         NavigationView {
             
@@ -27,10 +34,15 @@ struct ContentView: View {
                     .foregroundColor(.black)
                     .font(.headline)
                 List{
-                    ForEach(dataArray, id:\.self){
-                        Text("\($0)")
-                    }
-                    .onDelete(perform: removeRows)
+                        if(totalClass > 0)
+                    {
+                            ForEach(classesList[currentClass].students, id:\.self)
+                            {
+                                Text("\($0)")
+                            }
+                        }
+                    
+                    //.onDelete(perform: removeRows)
                 }
                 TextField("Class Name", text: $addClassNameText)
                     .foregroundColor(.black)
@@ -41,16 +53,22 @@ struct ContentView: View {
                         save()
                     }
                 }, label:{
-                    Text("Save".uppercased())
+                    Text("Add Student".uppercased())
                         .padding()
                         .background(Color.blue.cornerRadius(10))
                         .foregroundColor(.white)
                         .font(.headline)
                 })
                 
-                ForEach(dataArray, id:\.self){ data in
-                    Text(data)
-                }
+                if(totalClass > 0)
+                {
+                    //let data = ""
+                    //for i in stride(from: 1, to: totalClass, by: 1)
+                    //{
+                    //    Text(classesList[i].ClassName)
+                  // }
+                    Text("This is a test")
+                                    }
                 Spacer()
                 
                 Button(action: {
@@ -101,12 +119,14 @@ struct ContentView: View {
         return false
     }
     func saveText(){
-        dataArray.append(textFieldText)
-        textFieldText = ""
+        //dataArray.append(textFieldText)
+        //textFieldText = ""
+        classesList[currentClass].students.append(textFieldText)
         
     }
     func RandomName(){
-        let random = dataArray.randomElement()
+        //let random = dataArray.randomElement()
+        let random = classesList[currentClass].students.randomElement()
         print(random)
     }
     func save(){
@@ -126,9 +146,15 @@ struct ContentView: View {
     }
     func addClass(){
         if addClassNameText != "" {
-            classname.append(addClassNameText)
+            //classname.append(addClassNameText)
+            //addClassNameText = ""
+            classesList.append( Class(ClassName: addClassNameText, students: []))
+            totalClass += 1
             addClassNameText = ""
-            classesList.append( Class(ClassName: addClassNameText))
+        }
+        if(totalClass == 0)
+        {
+            currentClass = 1
         }
         
     }
