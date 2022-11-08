@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-
 struct ContentView: View {
     @State var textFieldText: String = ""
     @State var addClassNameText: String = ""
@@ -14,11 +13,17 @@ struct ContentView: View {
     @State var classname: [String] = []
     @State var dataArray: [String] = []
     @State var random: String = ""
+    class Class {
+        var ClassName: String = "null"
+        var students: [String] = []
+    }
+    var classesList: [Class] = []
+    var totalClass: Int = 0
     var body: some View {
         NavigationView {
             
             VStack {
-                TextField("Type Something Here", text: $textFieldText)
+                TextField("Student Name", text: $textFieldText)
                     .foregroundColor(.black)
                     .font(.headline)
                 List{
@@ -120,8 +125,11 @@ struct ContentView: View {
         save()
     }
     func addClass(){
-        classname.append(addClassNameText)
-        addClassNameText = ""
+        if addClassNameText != "" {
+            classname.append(addClassNameText)
+            addClassNameText = ""
+            classesList.append( Class(ClassName: addClassNameText))
+        }
         
     }
     
