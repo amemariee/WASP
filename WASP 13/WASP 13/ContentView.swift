@@ -135,11 +135,16 @@ struct ContentView: View {
         //textFieldText = ""
         print("total class \(totalClass)")
         print("Text \(textFieldText)")
+        print("current class\(classesList[currentClass])")
         if(totalClass > 0)
         {
+            print("works")
             classesList[currentClass].students.append(textFieldText)
         }
         print(classesList[currentClass].students)
+        
+        //check append students
+        dump(classesList[currentClass].students)
        
         
     }
