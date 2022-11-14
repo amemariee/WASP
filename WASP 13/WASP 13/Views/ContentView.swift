@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var authentication: Authentication
+    
     @State var textFieldText: String = ""
     @State var addClassNameText: String = ""
     @State var ChoseenArray: [String] = []
@@ -86,7 +88,13 @@ struct ContentView: View {
             
             .navigationTitle("WASP")
             
-            
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button("Log Out") {
+                        authentication.updateValidation(success: false)
+                    }
+                }
+            }
         }
     }
     func TextIsName() -> Bool {

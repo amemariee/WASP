@@ -14,6 +14,14 @@
 		1208D887290C4AC1002B6E22 /* WASP_13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208D886290C4AC1002B6E22 /* WASP_13Tests.swift */; };
 		1208D891290C4AC1002B6E22 /* WASP_13UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208D890290C4AC1002B6E22 /* WASP_13UITests.swift */; };
 		1208D893290C4AC1002B6E22 /* WASP_13UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1208D892290C4AC1002B6E22 /* WASP_13UITestsLaunchTests.swift */; };
+		2AABAFE4291C36DD00E9AB32 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFE3291C36DD00E9AB32 /* Credentials.swift */; };
+		2AABAFE7291C370E00E9AB32 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFE6291C370E00E9AB32 /* APIService.swift */; };
+		2AABAFEB291C3F5300E9AB32 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFEA291C3F5300E9AB32 /* UIApplication+Extension.swift */; };
+		2AABAFED291C3FC100E9AB32 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFEC291C3FC100E9AB32 /* LoginViewModel.swift */; };
+		2AABAFEF291C419100E9AB32 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFEE291C419100E9AB32 /* LoginView.swift */; };
+		2AABAFF1291C43C500E9AB32 /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFF0291C43C500E9AB32 /* Authentication.swift */; };
+		2AABAFF4291C5B0900E9AB32 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 2AABAFF3291C5B0900E9AB32 /* SwiftKeychainWrapper */; };
+		2AABAFF6291C5C1E00E9AB32 /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABAFF5291C5C1E00E9AB32 /* KeychainStorage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +52,13 @@
 		1208D88C290C4AC1002B6E22 /* WASP 13UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WASP 13UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1208D890290C4AC1002B6E22 /* WASP_13UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WASP_13UITests.swift; sourceTree = "<group>"; };
 		1208D892290C4AC1002B6E22 /* WASP_13UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WASP_13UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2AABAFE3291C36DD00E9AB32 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		2AABAFE6291C370E00E9AB32 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		2AABAFEA291C3F5300E9AB32 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		2AABAFEC291C3FC100E9AB32 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2AABAFEE291C419100E9AB32 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2AABAFF0291C43C500E9AB32 /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		2AABAFF5291C5C1E00E9AB32 /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AABAFF4291C5B0900E9AB32 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +111,10 @@
 			isa = PBXGroup;
 			children = (
 				1208D875290C4ABE002B6E22 /* WASP_13App.swift */,
-				1208D877290C4ABE002B6E22 /* ContentView.swift */,
+				2AABAFF0291C43C500E9AB32 /* Authentication.swift */,
+				2AABAFE1291C369D00E9AB32 /* Views */,
+				2AABAFE2291C36C100E9AB32 /* Models */,
+				2AABAFE5291C36F700E9AB32 /* Services */,
 				1208D879290C4AC0002B6E22 /* Assets.xcassets */,
 				1208D87B290C4AC0002B6E22 /* Preview Content */,
 			);
@@ -127,6 +146,34 @@
 			path = "WASP 13UITests";
 			sourceTree = "<group>";
 		};
+		2AABAFE1291C369D00E9AB32 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1208D877290C4ABE002B6E22 /* ContentView.swift */,
+				2AABAFEC291C3FC100E9AB32 /* LoginViewModel.swift */,
+				2AABAFEE291C419100E9AB32 /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2AABAFE2291C36C100E9AB32 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2AABAFE3291C36DD00E9AB32 /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2AABAFE5291C36F700E9AB32 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2AABAFE6291C370E00E9AB32 /* APIService.swift */,
+				2AABAFEA291C3F5300E9AB32 /* UIApplication+Extension.swift */,
+				2AABAFF5291C5C1E00E9AB32 /* KeychainStorage.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +190,9 @@
 			dependencies = (
 			);
 			name = "WASP 13";
+			packageProductDependencies = (
+				2AABAFF3291C5B0900E9AB32 /* SwiftKeychainWrapper */,
+			);
 			productName = "WASP 13";
 			productReference = 1208D872290C4ABE002B6E22 /* WASP 13.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +265,9 @@
 				Base,
 			);
 			mainGroup = 1208D869290C4ABE002B6E22;
+			packageReferences = (
+				2AABAFF2291C5B0900E9AB32 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
 			productRefGroup = 1208D873290C4ABE002B6E22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,8 +310,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AABAFE4291C36DD00E9AB32 /* Credentials.swift in Sources */,
+				2AABAFEF291C419100E9AB32 /* LoginView.swift in Sources */,
 				1208D878290C4ABE002B6E22 /* ContentView.swift in Sources */,
+				2AABAFED291C3FC100E9AB32 /* LoginViewModel.swift in Sources */,
+				2AABAFE7291C370E00E9AB32 /* APIService.swift in Sources */,
+				2AABAFEB291C3F5300E9AB32 /* UIApplication+Extension.swift in Sources */,
 				1208D876290C4ABE002B6E22 /* WASP_13App.swift in Sources */,
+				2AABAFF1291C43C500E9AB32 /* Authentication.swift in Sources */,
+				2AABAFF6291C5C1E00E9AB32 /* KeychainStorage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +479,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WASP 13/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to access stored credentials";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -448,6 +509,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"WASP 13/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Allow Face ID to access stored credentials";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -579,6 +641,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2AABAFF2291C5B0900E9AB32 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2AABAFF3291C5B0900E9AB32 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2AABAFF2291C5B0900E9AB32 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1208D86A290C4ABE002B6E22 /* Project object */;
 }
