@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		250B94152901EF52007A7D81 /* ProgramViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250B94142901EF51007A7D81 /* ProgramViewModel.swift */; };
+		258F201B2926DAF40025D816 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F201A2926DAF40025D816 /* GlobalModel.swift */; };
+		258F201C2926DAF40025D816 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F201A2926DAF40025D816 /* GlobalModel.swift */; };
+		258F201D2926DAF40025D816 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F201A2926DAF40025D816 /* GlobalModel.swift */; };
+		258F201E2926DAF40025D816 /* GlobalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258F201A2926DAF40025D816 /* GlobalModel.swift */; };
 		259FE1B62921D3F900E8832D /* EditClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259FE1B52921D3F900E8832D /* EditClassView.swift */; };
 		259FE1B82921D48F00E8832D /* NewClassView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259FE1B72921D48F00E8832D /* NewClassView.swift */; };
 		25C2B366291C473600FFDBD7 /* LoadingScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C2B365291C473600FFDBD7 /* LoadingScreenView.swift */; };
@@ -113,6 +117,8 @@
 
 /* Begin PBXFileReference section */
 		250B94142901EF51007A7D81 /* ProgramViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramViewModel.swift; sourceTree = "<group>"; };
+		258F200F2926DAA70025D816 /* WaspCat499Csumb WatchKit App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WaspCat499Csumb WatchKit App-Bridging-Header.h"; sourceTree = "<group>"; };
+		258F201A2926DAF40025D816 /* GlobalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalModel.swift; sourceTree = "<group>"; };
 		259FE1B52921D3F900E8832D /* EditClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClassView.swift; sourceTree = "<group>"; };
 		259FE1B72921D48F00E8832D /* NewClassView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewClassView.swift; sourceTree = "<group>"; };
 		25C2B365291C473600FFDBD7 /* LoadingScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingScreenView.swift; sourceTree = "<group>"; };
@@ -331,6 +337,8 @@
 				25CDAE4628F94E6F00AA88C1 /* ProgramObject.swift */,
 				25CDAE4828F9562200AA88C1 /* ConnectionProvider.swift */,
 				250B94142901EF51007A7D81 /* ProgramViewModel.swift */,
+				258F200F2926DAA70025D816 /* WaspCat499Csumb WatchKit App-Bridging-Header.h */,
+				258F201A2926DAF40025D816 /* GlobalModel.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -494,6 +502,7 @@
 					};
 					25CDADEF28F94D0E00AA88C1 = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1410;
 					};
 					25CDADFA28F94D0F00AA88C1 = {
 						CreatedOnToolsVersion = 13.2.1;
@@ -596,6 +605,7 @@
 			files = (
 				25CDAE4928F9562200AA88C1 /* ConnectionProvider.swift in Sources */,
 				25CDADD228F94D0C00AA88C1 /* ContentView.swift in Sources */,
+				258F201B2926DAF40025D816 /* GlobalModel.swift in Sources */,
 				25CDAE4728F94E6F00AA88C1 /* ProgramObject.swift in Sources */,
 				25CDADD028F94D0C00AA88C1 /* WaspCat499CsumbApp.swift in Sources */,
 				259FE1B82921D48F00E8832D /* NewClassView.swift in Sources */,
@@ -610,6 +620,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				258F201C2926DAF40025D816 /* GlobalModel.swift in Sources */,
 				25CDADE128F94D0E00AA88C1 /* WaspCat499CsumbTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -620,6 +631,7 @@
 			files = (
 				25CDADED28F94D0E00AA88C1 /* WaspCat499CsumbUITestsLaunchTests.swift in Sources */,
 				25CDADEB28F94D0E00AA88C1 /* WaspCat499CsumbUITests.swift in Sources */,
+				258F201D2926DAF40025D816 /* GlobalModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,6 +641,7 @@
 			files = (
 				25F9685729024C14000A8CC2 /* ProgramViewModel.swift in Sources */,
 				25F9685629024C10000A8CC2 /* ConnectionProvider.swift in Sources */,
+				258F201E2926DAF40025D816 /* GlobalModel.swift in Sources */,
 				25F9685929024CA7000A8CC2 /* ProgContentView.swift in Sources */,
 				25F9685529024C0A000A8CC2 /* ProgramObject.swift in Sources */,
 				25CDAE0528F94D0F00AA88C1 /* NotificationController.swift in Sources */,
@@ -874,6 +887,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
@@ -882,12 +896,19 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SCAR.WaspCat499Csumb;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WaspCat499Csumb/Classes/WaspCat499Csumb WatchKit App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 8.3;
@@ -900,6 +921,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4KDBAZ3U52;
@@ -908,12 +930,18 @@
 				INFOPLIST_KEY_CFBundleDisplayName = "WaspCat499Csumb WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = SCAR.WaspCat499Csumb;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = SCAR.WaspCat499Csumb.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "WaspCat499Csumb/Classes/WaspCat499Csumb WatchKit App-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;

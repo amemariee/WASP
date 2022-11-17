@@ -15,8 +15,13 @@ struct LoadingScreenView: View {
     
     var body: some View {
         
+        //let progObj = ProgramObject()
+        //progObj.initWithData(title: "CST 123", students: ["Amy", "Yma"])
+        //ConnectionProvider.programs.append(progObj)
+        
         if isActive{
-            ContentView(selectedClass: ProgramObject())
+            ContentView(selectedClass: GlobalModel().selectedClass)
+                //.enviornmentObject(progObj)
         }
         else{
             
@@ -50,8 +55,3 @@ struct LoadingScreenView: View {
     }
 }
 
-struct LoadingScreenView_Previews: PreviewProvider {
-    static var previews: some View {
-        LoadingScreenView()
-    }
-}

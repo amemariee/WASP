@@ -34,7 +34,7 @@ struct ProgView : View{
 struct ProgramView: View {
     @ObservedObject var viewModel : ProgramViewModel
     @State var programs : [ProgramObject] = []
-    @State var selectedClass: ProgramObject
+    @Binding var selectedClass: ProgramObject
 
     var body: some View {
         VStack{
@@ -44,7 +44,11 @@ struct ProgramView: View {
                 ProgView(prog: p)
                 .onTapGesture {
                         print(p.id as Any)
-                    selectedClass = p                    }             }
+                    self.selectedClass = p
+                    //GlobalModel().selectedClass = p
+                    //print(p.title)
+                    //print(GlobalModel().selectedClass.title)
+                }            }
             .onAppear(){
             viewModel.connectivityProvider.connect()
             viewModel.connectivityProvider.initFakeDetails()

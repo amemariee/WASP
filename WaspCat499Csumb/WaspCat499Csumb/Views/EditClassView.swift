@@ -10,17 +10,19 @@ import SwiftUI
 struct EditClassView: View {
     @State private var studentName: String = ""
     @ObservedObject var viewModel : ProgramViewModel
-    @State var selectedClass: ProgramObject?
+    @State var selectedClass: ProgramObject
     @State var programs : [ProgramObject] = []
     
     @State var selectedStudent = ""
         var body: some View {
-            let names = selectedClass!.students
+            let names = selectedClass.students
         VStack{
             Section{
             TextField("Student Name", text: $studentName)
             Button("Add Student"){
-                print("add student works")
+                print(studentName)
+                //print(selectedClass)
+                selectedClass.students.append(studentName)
             }
             .buttonStyle(BlueButton())
             .padding()
@@ -39,7 +41,7 @@ struct EditClassView: View {
             
       
                 Button("Remove student"){
-                    print("remove student works")
+                    //print($selectedStudent)
                 }
                 .buttonStyle(BlueButton())
                 .padding()

@@ -23,12 +23,13 @@ struct ContentView: View {
     let viewModel = ProgramViewModel(connectivityProvider : ConnectionProvider())
     let connect = ConnectionProvider()
     @State var programs : [ProgramObject] = []
-    let sName = "Student Name"
-  
-    @StateObject var selectedClass: ProgramObject
     
+    @State var selectedClass: ProgramObject
+    @State var names = "Student Name"
+    //@StateObject var GlobalModel = GlobalModel()
     var body: some View {
-        
+       // let sname = selectedClass.title
+       
         NavigationView{
             VStack{
                 HStack{
@@ -36,7 +37,7 @@ struct ContentView: View {
                         .padding()
                         .font(Font.custom("Montserrat", size:30))
                     
-                    NavigationLink(destination: ProgramView(viewModel : viewModel, selectedClass: selectedClass)){
+                    NavigationLink(destination: ProgramView(viewModel : viewModel, selectedClass: self.$selectedClass)){
                         Text("Courses")
                     }
                     .padding()
@@ -47,21 +48,27 @@ struct ContentView: View {
                 
                 Spacer()
                 Section{
-                    Text(sName)
+                    
+                    Text(names)
                         .font(Font.custom("Open-Sans", size:20))
-                }
-                
-                Spacer()
-                HStack{
-                    Button("Not picked"){
-                        print(selectedClass)
+                    
+                    
+                    Spacer()
+                    HStack{
+                        Button("Not picked"){
+                            print("Doesnt work")
+                        }
+                        .buttonStyle(BlueButton())
+                        
+                        Button(action: { names = selectedClass.students.randomElement() ?? "Please Select Course First"
+                            print(names)
+                        }){
+                            Text("Any Student")
+                        }
+                        .buttonStyle(BlueButton())
+                        
+                        
                     }
-                    .buttonStyle(BlueButton())
-                    Button("Any Student"){
-                        print("Any Student works")
-                    }
-                    .buttonStyle(BlueButton())
-               
                 }
                 Spacer()
             }
