@@ -16,7 +16,7 @@ struct NewClassView: View {
     var body: some View {
         Section{
             HStack{
-                Image(systemName: "person")
+                Image(systemName: "menubar.dock.rectangle")
                 TextField("New Course Name", text: $className)
                     .textFieldStyle(.roundedBorder)
                     

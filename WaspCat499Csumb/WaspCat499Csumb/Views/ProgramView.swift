@@ -14,10 +14,18 @@ struct ProgView : View{
     //@State var selectedClass : UUID
     var body : some View{
         VStack{
+            HStack{
             Text("\(prog.title!)")
                 .font(.headline)
                 .foregroundColor(.blue)
                 .frame(width: 200, height: 30, alignment: .leading)
+            
+            Button{
+                
+            }label: {
+                Image(systemName: "trash")
+            }
+            }
            // Text("\(prog.students!)")
                // .font(.subheadline)
                 //.foregroundColor(.green)

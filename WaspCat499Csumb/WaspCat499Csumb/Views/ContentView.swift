@@ -35,10 +35,10 @@ struct ContentView: View {
                 HStack{
                     Text("Watch Student Picker")
                         .padding()
-                        .font(Font.custom("Montserrat", size:30))
+                        .font(Font.custom("Montserrat", size:25))
                     
-                    NavigationLink(destination: ProgramView(viewModel : self.viewModel, selectedClass: self.$selectedClass)){
-                        Text("Courses")
+                    NavigationLink(destination: ProgramView(viewModel : self.viewModel, selectedClass: self.$selectedClass)) {
+                        Image(systemName: "menubar.rectangle")
                     }
                     .padding()
                 }
