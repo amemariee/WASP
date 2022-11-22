@@ -55,8 +55,21 @@ struct ContentView: View {
                     
                     Spacer()
                     HStack{
-                        Button("Not picked"){
-                            print("Doesnt work")
+                        var dupe = selectedClass.students
+                        Button(action: {
+                            if selectedClass.students.isEmpty{
+                                names = "Please Select Course First"
+                            }
+                            else if dupe.isEmpty{
+                                dupe = selectedClass.students
+                            }
+                            else{
+                                names = dupe.first ?? "Please Select Course First"
+                                dupe.removeFirst()
+                                
+                            }
+                        }){
+                            Text("Not Picked")
                         }
                         .buttonStyle(BlueButton())
                         
