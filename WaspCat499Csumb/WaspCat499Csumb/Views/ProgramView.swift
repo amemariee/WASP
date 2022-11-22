@@ -11,6 +11,7 @@ import SwiftUI
 
 struct ProgView : View{
     var prog : ProgramObject
+    @ObservedObject var viewModel : ProgramViewModel
     //@State var selectedClass : UUID
     var body : some View{
         VStack{
@@ -20,11 +21,13 @@ struct ProgView : View{
                 .foregroundColor(.blue)
                 .frame(width: 200, height: 30, alignment: .leading)
             
-            Button{
-                
-            }label: {
-                Image(systemName: "trash")
-            }
+             //   Button(action : {
+                      //  print("works")
+                        //viewModel.connectivityProvider.connect()
+                        //viewModel.connectivityProvider.removeClass(idRemove: prog.id)
+               // }){
+                //    Image(systemName: "trash")}
+           }
             }
            // Text("\(prog.students!)")
                // .font(.subheadline)
@@ -33,11 +36,11 @@ struct ProgView : View{
    
         
                 }
-        .contentShape(Rectangle())
+        //.contentShape(Rectangle())
         
 
 }
-}
+
 
 struct ProgramView: View {
     @ObservedObject var viewModel : ProgramViewModel
@@ -47,16 +50,28 @@ struct ProgramView: View {
     var body: some View {
        VStack{
             Text("Courses")
-            
-            List(programs, id: \.self){ p in
-                ProgView(prog: p)
-                .onTapGesture {
-                        print(p.id as Any)
-                    self.selectedClass = p
-                    //GlobalModel().selectedClass = p
-                    //print(p.title)
-                    //print(GlobalModel().selectedClass.title)
-                }            }
+           //HStack{
+               List(programs, id: \.self){ p in
+                   ProgView(prog: p, viewModel: self.viewModel)
+                       .onTapGesture {
+                           print(p.id as Any)
+                           self.selectedClass = p
+                           self.programs = viewModel.connectivityProvider.programs
+                       }
+                   Button(action : {
+                           //print("works")
+                           //viewModel.connectivityProvider.connect()
+                           viewModel.connectivityProvider.removeClass(idRemove: p.id)
+                   }){
+                       Image(systemName: "trash")}
+               }
+
+               //}
+                        //GlobalModel().selectedClass = p
+                        //print(p.title)
+                        //print(GlobalModel().selectedClass.title)
+                    
+            }
             .onAppear(){
                 viewModel.connectivityProvider.connect()
                 //viewModel.connectivityProvider.initFakeDetails()
@@ -78,6 +93,6 @@ struct ProgramView: View {
     }
     }
 }
-}
+
 
 

@@ -71,12 +71,10 @@ class ConnectionProvider: NSObject, WCSessionDelegate {
     }
     
     func removeClass(idRemove : UUID){
-        
-        if let index = programs.index(where: {
-            $0.id == idRemove
-        }){
-            programs.remove(at: index)
+        programs = programs.filter{
+            $0.id != idRemove
         }
+        dump(programs)
     }
     
     func initFakeDetails(){
