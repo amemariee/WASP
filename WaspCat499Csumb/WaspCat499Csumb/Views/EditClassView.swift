@@ -17,8 +17,17 @@ struct EditClassView: View {
         var body: some View {
             let names = selectedClass.students
         VStack{
+            //GeometryReader{
+                //metrics in
+            
             Section{
-            TextField("Student Name", text: $studentName)
+                HStack{
+                    Image(systemName: "person")
+                    TextField("Student Name", text: $studentName)
+                        .textFieldStyle(.roundedBorder)
+                        
+                }
+                .padding(.horizontal, 25)
             Button("Add Student"){
                 print(studentName)
                 //print(selectedClass)
@@ -28,7 +37,7 @@ struct EditClassView: View {
             .padding()
             }
             Spacer()
-            
+            //}
             Form{
                 Section{
                     Picker("Students", selection: $selectedStudent){
