@@ -37,7 +37,7 @@ struct ProgramView: View {
     @Binding var selectedClass: ProgramObject
 
     var body: some View {
-        VStack{
+       VStack{
             Text("Courses")
             
             List(programs, id: \.self){ p in
@@ -50,15 +50,19 @@ struct ProgramView: View {
                     //print(GlobalModel().selectedClass.title)
                 }            }
             .onAppear(){
-            viewModel.connectivityProvider.connect()
-            viewModel.connectivityProvider.initFakeDetails()
-            self.programs = viewModel.connectivityProvider.programs
+                viewModel.connectivityProvider.connect()
+                //viewModel.connectivityProvider.initFakeDetails()
+                //let temp = self.programs
+                self.programs = viewModel.connectivityProvider.programs
+                //self.programs.append(contentsOf: temp)
         }
+            //print(programs)
         HStack{
-            Button("New Class"){
-                print("new class works")
+            NavigationLink(destination: NewClassView(viewModel: self.viewModel, programs: self.$programs)){
+                Text("New Class")
             }
             .buttonStyle(BlueButton())
+                           
             NavigationLink(destination: EditClassView(viewModel : viewModel, selectedClass: self.selectedClass)){
                 Text("Edit Selected Course")
             }

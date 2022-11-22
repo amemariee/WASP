@@ -62,6 +62,23 @@ class ConnectionProvider: NSObject, WCSessionDelegate {
     }
     #endif
     
+    func addClass(title : String ){
+        let progObj3 = ProgramObject()
+        progObj3.initWithData(title: title, students: [])
+        programs.append(progObj3)
+        dump(programs)
+        
+    }
+    
+    func removeClass(idRemove : UUID){
+        
+        if let index = programs.index(where: {
+            $0.id == idRemove
+        }){
+            programs.remove(at: index)
+        }
+    }
+    
     func initFakeDetails(){
         programs.removeAll()
         

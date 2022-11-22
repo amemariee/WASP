@@ -37,7 +37,7 @@ struct ContentView: View {
                         .padding()
                         .font(Font.custom("Montserrat", size:30))
                     
-                    NavigationLink(destination: ProgramView(viewModel : viewModel, selectedClass: self.$selectedClass)){
+                    NavigationLink(destination: ProgramView(viewModel : self.viewModel, selectedClass: self.$selectedClass)){
                         Text("Courses")
                     }
                     .padding()

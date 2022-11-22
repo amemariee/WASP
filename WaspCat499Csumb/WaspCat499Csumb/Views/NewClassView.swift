@@ -8,13 +8,39 @@
 import SwiftUI
 
 struct NewClassView: View {
+    @ObservedObject var viewModel : ProgramViewModel
+    @Binding var programs : [ProgramObject]
+    @State var className = ""
+
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Section{
+            HStack{
+                Image(systemName: "person")
+                TextField("New Course Name", text: $className)
+                    .textFieldStyle(.roundedBorder)
+                    
+            }
+            .padding(.horizontal, 25)
+            Button(action: {
+                viewModel.connectivityProvider.connect()
+                //viewModel.connectivityProvider.addClass(title: className)
+                //let new = ProgramObject()
+                viewModel.connectivityProvider.addClass(title: className)
+                //new.initWithData(title: className, students: [])
+                //viewModel.connectivityProvider.programs.append(new)
+                //self.programs.append(new)
+                //dump(programs)
+           
+            }){
+                Text("Add Course")
+            }
+        .buttonStyle(BlueButton())
+        .padding()
+        }
+        Spacer()
     }
 }
 
-struct NewClassView_Previews: PreviewProvider {
-    static var previews: some View {
-        NewClassView()
-    }
-}
+
+
