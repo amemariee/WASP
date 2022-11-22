@@ -12,8 +12,8 @@ struct EditClassView: View {
     @ObservedObject var viewModel : ProgramViewModel
     @State var selectedClass: ProgramObject
     @State var programs : [ProgramObject] = []
+    @State var selectedStudent : String = "error"
     
-    @State var selectedStudent = ""
         var body: some View {
             let names = selectedClass.students
         VStack{
@@ -35,13 +35,18 @@ struct EditClassView: View {
                         ForEach(names, id: \.self){
                             Text($0)
                         }
+                        
                     }
                     .pickerStyle(.wheel)
                 
-            
-      
-                Button("Remove student"){
-                    //print($selectedStudent)
+                    Button(action:{
+                        //print(selectedStudent)
+                        selectedClass.students = selectedClass.students.filter(){
+                            $0 != selectedStudent
+                        }
+                    }){
+                        Text("Remove Student")
+                    //students = students.filter(){}
                 }
                 .buttonStyle(BlueButton())
                 .padding()
