@@ -15,6 +15,7 @@ Professors today spend a lot of their class time waiting for students to volunte
 </ul>
 
 ## Creators & Contributors
+<p><a href="https://github.com/grbruns"> Glenn Bruns </a></p>
 <p><a href="https://github.com/amemariee"> Amy Wall </a></p>
 <p><a href="https://github.com/RajveerSaini02"> Rajveer Saini </a></p>
 <p><a href="https://github.com/jbarrosoarr"> Jose Barroso A. </a></p>
