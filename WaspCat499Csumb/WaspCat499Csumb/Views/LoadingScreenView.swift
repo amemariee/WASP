@@ -20,7 +20,7 @@ struct LoadingScreenView: View {
         //ConnectionProvider.programs.append(progObj)
         
         if isActive{
-            ContentView(selectedClass: GlobalModel().selectedClass)
+            ContentView(selectedClass: GlobalModel().selectedClass, dupe: [])
                 //.enviornmentObject(progObj)
         }
         else{

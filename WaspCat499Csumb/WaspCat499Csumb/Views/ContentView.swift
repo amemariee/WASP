@@ -23,13 +23,13 @@ struct ContentView: View {
     let viewModel = ProgramViewModel(connectivityProvider : ConnectionProvider())
     let connect = ConnectionProvider()
     @State var programs : [ProgramObject] = []
-    
     @State var selectedClass: ProgramObject
     @State var names = "Student Name"
+    @State var dupe : [String]
     //@StateObject var GlobalModel = GlobalModel()
     var body: some View {
        // let sname = selectedClass.title
-       
+        //dupe = selectedClass.students
         NavigationView{
             VStack{
                 HStack{
@@ -55,17 +55,31 @@ struct ContentView: View {
                     
                     Spacer()
                     HStack{
-                        var dupe = selectedClass.students
+                        
+                       // dupe.append("end of students")
                         Button(action: {
                             if selectedClass.students.isEmpty{
                                 names = "Please Select Course First"
                             }
-                            else if dupe.isEmpty{
-                                dupe = selectedClass.students
+                            else if ((dupe.isEmpty)){
+                                names = "Picked All Students - Press Again to Restart"
+                                self.dupe = selectedClass.students
                             }
                             else{
-                                names = dupe.first ?? "Please Select Course First"
-                                dupe.removeFirst()
+                                //dupe.append("Picked All - Restarting")
+                                //names = dupe.first ?? "Please Select Course First"
+                                //dupe.removeFirst()
+                                let elementIndex = self.dupe.indices.randomElement()
+                                
+                                names = self.dupe[elementIndex!]
+                                self.dupe.remove(at: elementIndex!)
+                                //dupe.removeFirst()
+                                //dupe.remove(element)
+                                //dupe = dupe.filter() { $0 != element}
+                                //let index = dupe.firstIndex(of: element ?? "none")
+                                //dupe.remove(at: index ?? 0)
+                                print(names)
+                                dump(self.dupe)
                                 
                             }
                         }){
