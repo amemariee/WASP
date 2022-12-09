@@ -2,7 +2,9 @@
 
 Professors today spend a lot of their class time waiting for students to volunteer or choosing a student to answer the question that they asked. As technology continues to grow, the time spent on this issue should be able to be decreased. Over thousand of applications currently exist in the Apple Store, but not a single application to help a professor randomly choose a student directly from their Apple Watch is available. The iOS app, Watch Student Picker (WaSP), with watchOS integration, helps improve productivity and optimize the time spent during each class. This application allows instructors to add different course student rosters, quickly navigate through courses, and select a random student straight from their watch.
 
-[![Watch the video](https://youtu.be/4jnfIQst2u0)
+
+<video src='https://youtu.be/4jnfIQst2u0' width=180/>
+
 
 
 ## Built With
